@@ -1,0 +1,1 @@
+/home/sithija/voyager_ws/build/voyager_msgs/ament_cmake_environment_hooks/local_setup.sh

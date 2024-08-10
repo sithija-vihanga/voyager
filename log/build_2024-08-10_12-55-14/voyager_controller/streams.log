@@ -1,0 +1,27 @@
+[0.070s] Invoking command in '/home/sithija/voyager_ws/build/voyager_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sithija/voyager_ws/build/voyager_controller -- -j16 -l16
+[0.144s] [35m[1mConsolidate compiler generated dependencies of target base_controller[0m
+[0.179s] [100%] Built target base_controller
+[0.196s] Invoked command in '/home/sithija/voyager_ws/build/voyager_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sithija/voyager_ws/build/voyager_controller -- -j16 -l16
+[0.239s] Invoking command in '/home/sithija/voyager_ws/build/voyager_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sithija/voyager_ws/build/voyager_controller
+[0.247s] -- Install configuration: ""
+[0.247s] -- Execute custom install script
+[0.248s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/include/include/voyager_controller/base_controller.hpp
+[0.248s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/lib/voyager_controller/base_controller
+[0.248s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/config/voyager_controllers.yaml
+[0.248s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/launch/base_controller.launch.py
+[0.248s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/ament_index/resource_index/package_run_dependencies/voyager_controller
+[0.249s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/ament_index/resource_index/parent_prefix_path/voyager_controller
+[0.249s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/environment/ament_prefix_path.sh
+[0.249s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/environment/ament_prefix_path.dsv
+[0.249s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/environment/path.sh
+[0.249s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/environment/path.dsv
+[0.249s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/local_setup.bash
+[0.250s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/local_setup.sh
+[0.250s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/local_setup.zsh
+[0.250s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/local_setup.dsv
+[0.250s] -- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/package.dsv
+[0.263s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/ament_index/resource_index/packages/voyager_controller
+[0.263s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/cmake/voyager_controllerConfig.cmake
+[0.263s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/cmake/voyager_controllerConfig-version.cmake
+[0.263s] -- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/package.xml
+[0.266s] Invoked command in '/home/sithija/voyager_ws/build/voyager_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sithija/voyager_ws/build/voyager_controller

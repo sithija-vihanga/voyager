@@ -1,0 +1,30 @@
+[35m[1mConsolidate compiler generated dependencies of target camera_tf_kinematics[0m
+[100%] Built target camera_tf_kinematics
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/urdf/.vscode/c_cpp_properties.json
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/urdf/.vscode/settings.json
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/urdf/inertia_calculator.py
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/urdf/voyager.urdf.xacro
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/urdf/voyager_control.xacro
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/urdf/voyager_gazebo.xacro
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/meshes/wheel.STL
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/launch/display.launch.py
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/launch/voyager_gazebo.launch.py
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/rviz/display.rviz
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/lib/voyager_description/camera_tf_kinematics
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/ament_index/resource_index/package_run_dependencies/voyager_description
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/ament_index/resource_index/parent_prefix_path/voyager_description
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/environment/path.sh
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/environment/path.dsv
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/local_setup.bash
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/local_setup.sh
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/local_setup.zsh
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/local_setup.dsv
+-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/package.dsv
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/ament_index/resource_index/packages/voyager_description
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/cmake/voyager_descriptionConfig.cmake
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/cmake/voyager_descriptionConfig-version.cmake
+-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/package.xml

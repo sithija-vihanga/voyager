@@ -1,0 +1,277 @@
+[0.926s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.926s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7dab8e7c7670>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7dab8e7c63e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7dab8e7c63e0>>)
+[0.966s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.967s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.967s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.967s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.967s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.967s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.967s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sithija/voyager_ws'
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_controller) by extension 'ignore'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_controller) by extension 'ignore_ament_install'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_controller) by extensions ['colcon_pkg']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_controller) by extension 'colcon_pkg'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_controller) by extensions ['colcon_meta']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_controller) by extension 'colcon_meta'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_controller) by extensions ['ros']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_controller) by extension 'ros'
+[0.980s] DEBUG:colcon.colcon_core.package_identification:Package 'src/voyager_controller' with type 'ros.ament_cmake' and name 'voyager_controller'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_description) by extensions ['ignore', 'ignore_ament_install']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_description) by extension 'ignore'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_description) by extension 'ignore_ament_install'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_description) by extensions ['colcon_pkg']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_description) by extension 'colcon_pkg'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_description) by extensions ['colcon_meta']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_description) by extension 'colcon_meta'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_description) by extensions ['ros']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_description) by extension 'ros'
+[0.982s] DEBUG:colcon.colcon_core.package_identification:Package 'src/voyager_description' with type 'ros.ament_cmake' and name 'voyager_description'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_msgs) by extension 'ignore'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_msgs) by extension 'ignore_ament_install'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_msgs) by extensions ['colcon_pkg']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_msgs) by extension 'colcon_pkg'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_msgs) by extensions ['colcon_meta']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_msgs) by extension 'colcon_meta'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_msgs) by extensions ['ros']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/voyager_msgs) by extension 'ros'
+[0.982s] DEBUG:colcon.colcon_core.package_identification:Package 'src/voyager_msgs' with type 'ros.ament_cmake' and name 'voyager_msgs'
+[0.982s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.983s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.983s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.983s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.983s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.093s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/sithija/voyager_ws/install
+[1.119s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 401 installed packages in /opt/ros/humble
+[1.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.209s] Level 5:colcon.colcon_core.verb:set package 'voyager_controller' build argument 'cmake_args' from command line to 'None'
+[1.209s] Level 5:colcon.colcon_core.verb:set package 'voyager_controller' build argument 'cmake_target' from command line to 'None'
+[1.209s] Level 5:colcon.colcon_core.verb:set package 'voyager_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.209s] Level 5:colcon.colcon_core.verb:set package 'voyager_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.209s] Level 5:colcon.colcon_core.verb:set package 'voyager_controller' build argument 'cmake_clean_first' from command line to 'False'
+[1.209s] Level 5:colcon.colcon_core.verb:set package 'voyager_controller' build argument 'cmake_force_configure' from command line to 'False'
+[1.210s] Level 5:colcon.colcon_core.verb:set package 'voyager_controller' build argument 'ament_cmake_args' from command line to 'None'
+[1.210s] Level 5:colcon.colcon_core.verb:set package 'voyager_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.210s] Level 5:colcon.colcon_core.verb:set package 'voyager_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.210s] DEBUG:colcon.colcon_core.verb:Building package 'voyager_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sithija/voyager_ws/build/voyager_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sithija/voyager_ws/install/voyager_controller', 'merge_install': False, 'path': '/home/sithija/voyager_ws/src/voyager_controller', 'symlink_install': True, 'test_result_base': None}
+[1.223s] Level 5:colcon.colcon_core.verb:set package 'voyager_msgs' build argument 'cmake_args' from command line to 'None'
+[1.223s] Level 5:colcon.colcon_core.verb:set package 'voyager_msgs' build argument 'cmake_target' from command line to 'None'
+[1.223s] Level 5:colcon.colcon_core.verb:set package 'voyager_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.223s] Level 5:colcon.colcon_core.verb:set package 'voyager_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.223s] Level 5:colcon.colcon_core.verb:set package 'voyager_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.223s] Level 5:colcon.colcon_core.verb:set package 'voyager_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.223s] Level 5:colcon.colcon_core.verb:set package 'voyager_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.223s] Level 5:colcon.colcon_core.verb:set package 'voyager_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.223s] Level 5:colcon.colcon_core.verb:set package 'voyager_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.223s] DEBUG:colcon.colcon_core.verb:Building package 'voyager_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sithija/voyager_ws/build/voyager_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sithija/voyager_ws/install/voyager_msgs', 'merge_install': False, 'path': '/home/sithija/voyager_ws/src/voyager_msgs', 'symlink_install': True, 'test_result_base': None}
+[1.237s] Level 5:colcon.colcon_core.verb:set package 'voyager_description' build argument 'cmake_args' from command line to 'None'
+[1.237s] Level 5:colcon.colcon_core.verb:set package 'voyager_description' build argument 'cmake_target' from command line to 'None'
+[1.237s] Level 5:colcon.colcon_core.verb:set package 'voyager_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.237s] Level 5:colcon.colcon_core.verb:set package 'voyager_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.237s] Level 5:colcon.colcon_core.verb:set package 'voyager_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.237s] Level 5:colcon.colcon_core.verb:set package 'voyager_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.237s] Level 5:colcon.colcon_core.verb:set package 'voyager_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.237s] Level 5:colcon.colcon_core.verb:set package 'voyager_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.237s] Level 5:colcon.colcon_core.verb:set package 'voyager_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.237s] DEBUG:colcon.colcon_core.verb:Building package 'voyager_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sithija/voyager_ws/build/voyager_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sithija/voyager_ws/install/voyager_description', 'merge_install': False, 'path': '/home/sithija/voyager_ws/src/voyager_description', 'symlink_install': True, 'test_result_base': None}
+[1.251s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.266s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.266s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sithija/voyager_ws/src/voyager_msgs' with build type 'ament_cmake'
+[1.266s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sithija/voyager_ws/src/voyager_msgs'
+[1.282s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.282s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.282s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.326s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sithija/voyager_ws/src/voyager_controller' with build type 'ament_cmake'
+[1.326s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sithija/voyager_ws/src/voyager_controller'
+[1.340s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.340s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.391s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sithija/voyager_ws/build/voyager_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sithija/voyager_ws/build/voyager_msgs -- -j16 -l16
+[1.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sithija/voyager_ws/build/voyager_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sithija/voyager_ws/build/voyager_controller -- -j16 -l16
+[1.493s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sithija/voyager_ws/build/voyager_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sithija/voyager_ws/build/voyager_controller -- -j16 -l16
+[1.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sithija/voyager_ws/build/voyager_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sithija/voyager_ws/build/voyager_controller
+[1.552s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(voyager_controller)
+[1.553s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sithija/voyager_ws/build/voyager_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sithija/voyager_ws/build/voyager_controller
+[1.570s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_controller' for CMake module files
+[1.571s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_controller' for CMake config files
+[1.571s] Level 1:colcon.colcon_core.shell:create_environment_hook('voyager_controller', 'cmake_prefix_path')
+[1.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/hook/cmake_prefix_path.ps1'
+[1.586s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/hook/cmake_prefix_path.dsv'
+[1.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/hook/cmake_prefix_path.sh'
+[1.588s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_controller/lib'
+[1.588s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_controller/bin'
+[1.588s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_controller/lib/pkgconfig/voyager_controller.pc'
+[1.588s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_controller/lib/python3.10/site-packages'
+[1.588s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_controller/bin'
+[1.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/package.ps1'
+[1.606s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/package.dsv'
+[1.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/package.sh'
+[1.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/package.bash'
+[1.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/package.zsh'
+[1.608s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sithija/voyager_ws/install/voyager_controller/share/colcon-core/packages/voyager_controller)
+[1.654s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(voyager_controller)
+[1.669s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_controller' for CMake module files
+[1.669s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_controller' for CMake config files
+[1.670s] Level 1:colcon.colcon_core.shell:create_environment_hook('voyager_controller', 'cmake_prefix_path')
+[1.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/hook/cmake_prefix_path.ps1'
+[1.685s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/hook/cmake_prefix_path.dsv'
+[1.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/hook/cmake_prefix_path.sh'
+[1.686s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_controller/lib'
+[1.686s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_controller/bin'
+[1.686s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_controller/lib/pkgconfig/voyager_controller.pc'
+[1.686s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_controller/lib/python3.10/site-packages'
+[1.686s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_controller/bin'
+[1.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/package.ps1'
+[1.702s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/package.dsv'
+[1.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/package.sh'
+[1.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/package.bash'
+[1.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/package.zsh'
+[1.704s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sithija/voyager_ws/install/voyager_controller/share/colcon-core/packages/voyager_controller)
+[1.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sithija/voyager_ws/build/voyager_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sithija/voyager_ws/build/voyager_msgs -- -j16 -l16
+[1.829s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sithija/voyager_ws/build/voyager_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sithija/voyager_ws/build/voyager_msgs
+[1.923s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(voyager_msgs)
+[1.925s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sithija/voyager_ws/build/voyager_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sithija/voyager_ws/build/voyager_msgs
+[1.966s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_msgs' for CMake module files
+[1.968s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_msgs' for CMake config files
+[1.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('voyager_msgs', 'cmake_prefix_path')
+[2.006s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/hook/cmake_prefix_path.ps1'
+[2.006s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/hook/cmake_prefix_path.dsv'
+[2.006s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/hook/cmake_prefix_path.sh'
+[2.007s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_msgs/lib'
+[2.007s] Level 1:colcon.colcon_core.shell:create_environment_hook('voyager_msgs', 'ld_library_path_lib')
+[2.021s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/hook/ld_library_path_lib.ps1'
+[2.021s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/hook/ld_library_path_lib.dsv'
+[2.022s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/hook/ld_library_path_lib.sh'
+[2.022s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_msgs/bin'
+[2.022s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_msgs/lib/pkgconfig/voyager_msgs.pc'
+[2.022s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_msgs/lib/python3.10/site-packages'
+[2.022s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_msgs/bin'
+[2.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/package.ps1'
+[2.037s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/package.dsv'
+[2.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/package.sh'
+[2.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/package.bash'
+[2.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/package.zsh'
+[2.038s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sithija/voyager_ws/install/voyager_msgs/share/colcon-core/packages/voyager_msgs)
+[2.127s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(voyager_msgs)
+[2.141s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_msgs' for CMake module files
+[2.141s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_msgs' for CMake config files
+[2.142s] Level 1:colcon.colcon_core.shell:create_environment_hook('voyager_msgs', 'cmake_prefix_path')
+[2.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/hook/cmake_prefix_path.ps1'
+[2.156s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/hook/cmake_prefix_path.dsv'
+[2.156s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/hook/cmake_prefix_path.sh'
+[2.157s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_msgs/lib'
+[2.157s] Level 1:colcon.colcon_core.shell:create_environment_hook('voyager_msgs', 'ld_library_path_lib')
+[2.171s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/hook/ld_library_path_lib.ps1'
+[2.172s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/hook/ld_library_path_lib.dsv'
+[2.172s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/hook/ld_library_path_lib.sh'
+[2.172s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_msgs/bin'
+[2.172s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_msgs/lib/pkgconfig/voyager_msgs.pc'
+[2.172s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_msgs/lib/python3.10/site-packages'
+[2.173s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_msgs/bin'
+[2.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/package.ps1'
+[2.187s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/package.dsv'
+[2.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/package.sh'
+[2.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/package.bash'
+[2.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/package.zsh'
+[2.189s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sithija/voyager_ws/install/voyager_msgs/share/colcon-core/packages/voyager_msgs)
+[2.189s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sithija/voyager_ws/src/voyager_description' with build type 'ament_cmake'
+[2.189s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sithija/voyager_ws/src/voyager_description'
+[2.205s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.205s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.261s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sithija/voyager_ws/build/voyager_description': CMAKE_PREFIX_PATH=/home/sithija/voyager_ws/install/voyager_msgs:/home/sithija/voyager_ws/install/voyager_description:/home/sithija/voyager_ws/install/voyager_controller:/opt/ros/humble /usr/bin/cmake --build /home/sithija/voyager_ws/build/voyager_description -- -j16 -l16
+[2.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sithija/voyager_ws/build/voyager_description' returned '0': CMAKE_PREFIX_PATH=/home/sithija/voyager_ws/install/voyager_msgs:/home/sithija/voyager_ws/install/voyager_description:/home/sithija/voyager_ws/install/voyager_controller:/opt/ros/humble /usr/bin/cmake --build /home/sithija/voyager_ws/build/voyager_description -- -j16 -l16
+[2.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sithija/voyager_ws/build/voyager_description': CMAKE_PREFIX_PATH=/home/sithija/voyager_ws/install/voyager_msgs:/home/sithija/voyager_ws/install/voyager_description:/home/sithija/voyager_ws/install/voyager_controller:/opt/ros/humble /usr/bin/cmake --install /home/sithija/voyager_ws/build/voyager_description
+[2.526s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(voyager_description)
+[2.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sithija/voyager_ws/build/voyager_description' returned '0': CMAKE_PREFIX_PATH=/home/sithija/voyager_ws/install/voyager_msgs:/home/sithija/voyager_ws/install/voyager_description:/home/sithija/voyager_ws/install/voyager_controller:/opt/ros/humble /usr/bin/cmake --install /home/sithija/voyager_ws/build/voyager_description
+[2.567s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_description' for CMake module files
+[2.568s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_description' for CMake config files
+[2.569s] Level 1:colcon.colcon_core.shell:create_environment_hook('voyager_description', 'cmake_prefix_path')
+[2.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/hook/cmake_prefix_path.ps1'
+[2.609s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/hook/cmake_prefix_path.dsv'
+[2.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/hook/cmake_prefix_path.sh'
+[2.610s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_description/lib'
+[2.610s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_description/bin'
+[2.610s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_description/lib/pkgconfig/voyager_description.pc'
+[2.610s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_description/lib/python3.10/site-packages'
+[2.610s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_description/bin'
+[2.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/package.ps1'
+[2.624s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/package.dsv'
+[2.624s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/package.sh'
+[2.624s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/package.bash'
+[2.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/package.zsh'
+[2.625s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sithija/voyager_ws/install/voyager_description/share/colcon-core/packages/voyager_description)
+[2.728s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(voyager_description)
+[2.760s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_description' for CMake module files
+[2.761s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_description' for CMake config files
+[2.761s] Level 1:colcon.colcon_core.shell:create_environment_hook('voyager_description', 'cmake_prefix_path')
+[2.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/hook/cmake_prefix_path.ps1'
+[2.775s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/hook/cmake_prefix_path.dsv'
+[2.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/hook/cmake_prefix_path.sh'
+[2.776s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_description/lib'
+[2.776s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_description/bin'
+[2.776s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_description/lib/pkgconfig/voyager_description.pc'
+[2.776s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_description/lib/python3.10/site-packages'
+[2.776s] Level 1:colcon.colcon_core.environment:checking '/home/sithija/voyager_ws/install/voyager_description/bin'
+[2.790s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/package.ps1'
+[2.791s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/package.dsv'
+[2.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/package.sh'
+[2.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/package.bash'
+[2.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/sithija/voyager_ws/install/voyager_description/share/voyager_description/package.zsh'
+[2.792s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sithija/voyager_ws/install/voyager_description/share/colcon-core/packages/voyager_description)
+[2.792s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.792s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.792s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.792s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.812s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.812s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.812s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.832s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.846s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sithija/voyager_ws/install/local_setup.ps1'
+[2.847s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sithija/voyager_ws/install/_local_setup_util_ps1.py'
+[2.848s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sithija/voyager_ws/install/setup.ps1'
+[2.862s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sithija/voyager_ws/install/local_setup.sh'
+[2.862s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sithija/voyager_ws/install/_local_setup_util_sh.py'
+[2.862s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sithija/voyager_ws/install/setup.sh'
+[2.877s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sithija/voyager_ws/install/local_setup.bash'
+[2.877s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sithija/voyager_ws/install/setup.bash'
+[2.891s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sithija/voyager_ws/install/local_setup.zsh'
+[2.891s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sithija/voyager_ws/install/setup.zsh'

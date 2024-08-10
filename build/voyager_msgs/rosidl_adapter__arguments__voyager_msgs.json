@@ -1,0 +1,6 @@
+{
+  "package_name": "voyager_msgs",
+  "non_idl_tuples": [
+    "/home/sithija/voyager_ws/src/voyager_msgs:srv/GetTransform.srv"
+  ]
+}

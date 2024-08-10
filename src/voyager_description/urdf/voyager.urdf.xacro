@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+
+<robot name="voyager" xmlns:xacro = "http://ros.org/wiki/xacro">
+    <xacro:include filename="$(find voyager_description)/urdf/voyager_gazebo.xacro"/>
+    <xacro:include filename="$(find voyager_description)/urdf/voyager_control.xacro"/>
+
+    <link name ="base_footprint"/>
+
+    <link name="base_link">
+        <inertial>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="3.0"/>
+            <inertia ixx="0.0065249999999999996" ixy="0.0" ixz="0.0"
+               iyy="0.0234" iyz="0.0"
+               izz="0.028124999999999997" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.3 0.15 0.06"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.3 0.15 0.006"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="base_joint" type="fixed">
+        <origin xyz="0.0 0.0 0.045" rpy="0.0 0.0 0.0"/>
+        <parent link="base_footprint"/>
+        <child link="base_link"/>
+    </joint>  
+
+    <!-- Front Right wheel -->
+    <link name="wheel_front_right_link">
+        <inertial>
+            <origin xyz="0.0 -0.015 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="0.3" />
+            <inertia ixx="0.016335000000000002" ixy="0.0" ixz="0.0"
+               iyy="0.10816749999999999" iyz="0.0"
+               izz="0.10816749999999999" />
+            </inertial>
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="1.57 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://voyager_description/meshes/wheel.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.0 0.0 1.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 -0.015 0" rpy="1.57 0 0" />
+            <geometry>
+                <!-- <sphere radius="0.033"/> -->
+                <cylinder radius="0.033" length="0.02"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="wheel_front_right_joint" type="continuous">
+        <origin xyz="0.075 -0.075 -0.02" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="wheel_front_right_link"/>
+        <axis xyz="0.0 1.0 0.0"/>
+    </joint>
+
+    <!-- Front Left wheel -->
+    <link name="wheel_front_left_link">
+        <inertial>
+            <origin xyz="0.0 0.015 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="0.30086090966721" />
+            <inertia ixx="0.016335000000000002" ixy="0.0" ixz="0.0"
+               iyy="0.10816749999999999" iyz="0.0"
+               izz="0.10816749999999999" />
+            </inertial>
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="-1.57 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://voyager_description/meshes/wheel.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.0 0.0 1.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.015 0.0" rpy="-1.57 0.0 0.0" />
+            <geometry>
+                <!-- <sphere radius="0.033"/> -->
+                <cylinder radius="0.033" length="0.02"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="wheel_front_left_joint" type="continuous">
+        <origin xyz="0.075 0.075 -0.02" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="wheel_front_left_link"/>
+        <axis xyz="0.0 1.0 0.0"/>
+    </joint>
+
+        <!-- Rear Right wheel -->
+    <link name="wheel_rear_right_link">
+        <inertial>
+            <origin xyz="0.0 -0.015 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="0.30086090966721" />
+            <inertia ixx="0.016335000000000002" ixy="0.0" ixz="0.0"
+               iyy="0.10816749999999999" iyz="0.0"
+               izz="0.10816749999999999" />
+            </inertial>
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="1.57 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://voyager_description/meshes/wheel.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.0 0.0 1.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 -0.015 0" rpy="1.57 0 0" />
+            <geometry>
+                <!-- <sphere radius="0.033"/> -->
+                <cylinder radius="0.033" length="0.02"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="wheel_rear_right_joint" type="continuous">
+        <origin xyz="-0.075 -0.075 -0.02" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="wheel_rear_right_link"/>
+        <axis xyz="0.0 1.0 0.0"/>
+    </joint>
+
+    <!-- Rear Left wheel -->
+    <link name="wheel_rear_left_link">
+        <inertial>
+            <origin xyz="0.0 0.015 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="0.30086090966721" />
+            <inertia ixx="0.016335000000000002" ixy="0.0" ixz="0.0"
+               iyy="0.10816749999999999" iyz="0.0"
+               izz="0.10816749999999999" />
+            </inertial>
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="-1.57 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://voyager_description/meshes/wheel.STL"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.0 0.0 1.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.015 0.0" rpy="1.57 0.0 0.0" />
+            <geometry>
+                <!-- <sphere radius="0.033"/> -->
+                <cylinder radius="0.033" length="0.02"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="wheel_rear_left_joint" type="continuous">
+        <origin xyz="-0.075 0.075 -0.02" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="wheel_rear_left_link"/>
+        <axis xyz="0.0 1.0 0.0"/>
+    </joint>
+
+    <!-- Camera base -->
+    <link name="camera_base_link">
+        <inertial>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="0.3"/>
+            <inertia ixx="0.0001425" ixy="0.0" ixz="0.0" iyy="0.0001425" iyz="0.0" izz="0.00024"/>
+        </inertial>
+        <visual name="">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <geometry>
+                    <cylinder radius="0.04" length="0.03"/>
+                </geometry>
+            <material name="">
+                <color rgba="0.0 1.0 0.0 1.0"/>
+            </material>
+        </visual>
+        <visual>
+            <origin xyz="0.02 0.0 0.025" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.02 0.02 0.02"/>
+            </geometry>
+            <material name="">
+                <color rgba="1.0 0.0 0.0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.04" length="0.03"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="camera_base_joint" type="revolute">
+        <origin xyz="0.08 0.0 0.045" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="camera_base_link"/>
+        <axis xyz="0.0 0.0 1.0"/>
+        <limit lower="-0.5" upper="0.5" effort="0.5" velocity="0.8"/>
+    </joint>  
+  
+
+
+</robot>

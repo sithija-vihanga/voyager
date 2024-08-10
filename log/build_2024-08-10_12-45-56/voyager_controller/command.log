@@ -1,0 +1,6 @@
+Invoking command in '/home/sithija/voyager_ws/build/voyager_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sithija/voyager_ws/src/voyager_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sithija/voyager_ws/install/voyager_controller
+Invoked command in '/home/sithija/voyager_ws/build/voyager_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sithija/voyager_ws/src/voyager_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sithija/voyager_ws/install/voyager_controller
+Invoking command in '/home/sithija/voyager_ws/build/voyager_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sithija/voyager_ws/build/voyager_controller -- -j16 -l16
+Invoked command in '/home/sithija/voyager_ws/build/voyager_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sithija/voyager_ws/build/voyager_controller -- -j16 -l16
+Invoking command in '/home/sithija/voyager_ws/build/voyager_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sithija/voyager_ws/build/voyager_controller
+Invoked command in '/home/sithija/voyager_ws/build/voyager_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sithija/voyager_ws/build/voyager_controller

@@ -1,0 +1,511 @@
+[0.000000] (-) TimerEvent: {}
+[0.000370] (voyager_controller) JobQueued: {'identifier': 'voyager_controller', 'dependencies': OrderedDict()}
+[0.000509] (voyager_msgs) JobQueued: {'identifier': 'voyager_msgs', 'dependencies': OrderedDict()}
+[0.000565] (voyager_description) JobQueued: {'identifier': 'voyager_description', 'dependencies': OrderedDict([('voyager_msgs', '/home/sithija/voyager_ws/install/voyager_msgs')])}
+[0.000619] (voyager_msgs) JobStarted: {'identifier': 'voyager_msgs'}
+[0.046489] (voyager_controller) JobStarted: {'identifier': 'voyager_controller'}
+[0.092114] (voyager_msgs) JobProgress: {'identifier': 'voyager_msgs', 'progress': 'cmake'}
+[0.092417] (voyager_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/sithija/voyager_ws/src/voyager_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/sithija/voyager_ws/install/voyager_msgs'], 'cwd': '/home/sithija/voyager_ws/build/voyager_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sithija'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sithija'), ('CYCLONEDDS_URI', '/home/sithija/.ros/dds.xml'), ('OLDPWD', '/home/sithija'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2147'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'sithija'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sithija'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/sithija/.cargo/bin:/home/sithija/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin/python3'), ('SESSION_MANAGER', 'local/sithija-rog:@/tmp/.ICE-unix/2086,unix/sithija-rog:/tmp/.ICE-unix/2086'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afddec43_5180_4cc7_bef1_21aa788fffb1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.300'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sithija/voyager_ws/build/voyager_msgs'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.096485] (voyager_controller) JobProgress: {'identifier': 'voyager_controller', 'progress': 'cmake'}
+[0.097364] (voyager_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/sithija/voyager_ws/src/voyager_controller', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/sithija/voyager_ws/install/voyager_controller'], 'cwd': '/home/sithija/voyager_ws/build/voyager_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sithija'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sithija'), ('CYCLONEDDS_URI', '/home/sithija/.ros/dds.xml'), ('OLDPWD', '/home/sithija'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2147'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'sithija'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sithija'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/sithija/.cargo/bin:/home/sithija/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin/python3'), ('SESSION_MANAGER', 'local/sithija-rog:@/tmp/.ICE-unix/2086,unix/sithija-rog:/tmp/.ICE-unix/2086'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afddec43_5180_4cc7_bef1_21aa788fffb1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.300'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sithija/voyager_ws/build/voyager_controller'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099050] (-) TimerEvent: {}
+[0.199345] (-) TimerEvent: {}
+[0.207609] (voyager_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.209069] (voyager_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.299463] (-) TimerEvent: {}
+[0.300042] (voyager_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.306737] (voyager_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.310546] (voyager_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.322501] (voyager_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.399592] (-) TimerEvent: {}
+[0.413903] (voyager_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.425623] (voyager_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.428088] (voyager_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.428788] (voyager_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.429802] (voyager_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.436988] (voyager_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.442058] (voyager_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.442596] (voyager_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.443522] (voyager_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.449422] (voyager_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.499763] (-) TimerEvent: {}
+[0.551514] (voyager_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.569157] (voyager_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.569767] (voyager_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.570852] (voyager_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.577384] (voyager_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.577623] (voyager_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.584129] (voyager_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.584351] (voyager_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.584799] (voyager_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.587273] (voyager_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600316] (-) TimerEvent: {}
+[0.700938] (-) TimerEvent: {}
+[0.771915] (voyager_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.801398] (-) TimerEvent: {}
+[0.823740] (voyager_controller) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.855537] (voyager_controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.892260] (voyager_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.895971] (voyager_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.901021] (voyager_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.901477] (-) TimerEvent: {}
+[0.908962] (voyager_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.921359] (voyager_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.939685] (voyager_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.945226] (voyager_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.001637] (-) TimerEvent: {}
+[1.002497] (voyager_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.005246] (voyager_controller) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.024244] (voyager_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.048491] (voyager_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.058534] (voyager_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.068524] (voyager_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.073605] (voyager_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.082693] (voyager_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.095121] (voyager_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.101742] (-) TimerEvent: {}
+[1.112845] (voyager_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.161858] (voyager_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.162056] (voyager_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.202257] (-) TimerEvent: {}
+[1.218389] (voyager_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.294288] (voyager_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.297095] (voyager_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.302386] (-) TimerEvent: {}
+[1.402938] (-) TimerEvent: {}
+[1.488507] (voyager_controller) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.503202] (-) TimerEvent: {}
+[1.539832] (voyager_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.560340] (voyager_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.603354] (-) TimerEvent: {}
+[1.609625] (voyager_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.609863] (voyager_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/sithija/voyager_ws/src/voyager_controller/include\n'}
+[1.609998] (voyager_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.610182] (voyager_controller) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.610421] (voyager_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.610926] (voyager_controller) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.612035] (voyager_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.612208] (voyager_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.612502] (voyager_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.614172] (voyager_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.624472] (voyager_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[1.626395] (voyager_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/sithija/voyager_ws/build/voyager_controller\n'}
+[1.636547] (voyager_controller) CommandEnded: {'returncode': 0}
+[1.637369] (voyager_controller) JobProgress: {'identifier': 'voyager_controller', 'progress': 'build'}
+[1.638860] (voyager_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sithija/voyager_ws/build/voyager_controller', '--', '-j16', '-l16'], 'cwd': '/home/sithija/voyager_ws/build/voyager_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sithija'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sithija'), ('CYCLONEDDS_URI', '/home/sithija/.ros/dds.xml'), ('OLDPWD', '/home/sithija'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2147'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'sithija'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sithija'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/sithija/.cargo/bin:/home/sithija/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin/python3'), ('SESSION_MANAGER', 'local/sithija-rog:@/tmp/.ICE-unix/2086,unix/sithija-rog:/tmp/.ICE-unix/2086'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afddec43_5180_4cc7_bef1_21aa788fffb1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.300'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sithija/voyager_ws/build/voyager_controller'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.695414] (voyager_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/base_controller.dir/src/base_controller.cpp.o\x1b[0m\n'}
+[1.703454] (-) TimerEvent: {}
+[1.803804] (-) TimerEvent: {}
+[1.904218] (-) TimerEvent: {}
+[2.004563] (-) TimerEvent: {}
+[2.036199] (voyager_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.105343] (-) TimerEvent: {}
+[2.206114] (-) TimerEvent: {}
+[2.243907] (voyager_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.265368] (voyager_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.267401] (voyager_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.292701] (voyager_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.292953] (voyager_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.293073] (voyager_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.293184] (voyager_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.306705] (-) TimerEvent: {}
+[2.312736] (voyager_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.375390] (voyager_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.406833] (-) TimerEvent: {}
+[2.407369] (voyager_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.410103] (voyager_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/sithija/voyager_ws/build/voyager_msgs\n'}
+[2.418866] (voyager_msgs) CommandEnded: {'returncode': 0}
+[2.419735] (voyager_msgs) JobProgress: {'identifier': 'voyager_msgs', 'progress': 'build'}
+[2.420416] (voyager_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sithija/voyager_ws/build/voyager_msgs', '--', '-j16', '-l16'], 'cwd': '/home/sithija/voyager_ws/build/voyager_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sithija'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sithija'), ('CYCLONEDDS_URI', '/home/sithija/.ros/dds.xml'), ('OLDPWD', '/home/sithija'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2147'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'sithija'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sithija'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/sithija/.cargo/bin:/home/sithija/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin/python3'), ('SESSION_MANAGER', 'local/sithija-rog:@/tmp/.ICE-unix/2086,unix/sithija-rog:/tmp/.ICE-unix/2086'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afddec43_5180_4cc7_bef1_21aa788fffb1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.300'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sithija/voyager_ws/build/voyager_msgs'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.479228] (voyager_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.503586] (voyager_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_symlink_voyager_msgs\n'}
+[2.504413] (voyager_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.506943] (-) TimerEvent: {}
+[2.607245] (-) TimerEvent: {}
+[2.707621] (-) TimerEvent: {}
+[2.748256] (voyager_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.748667] (voyager_msgs) StdoutLine: {'line': b'creating voyager_msgs.egg-info\n'}
+[2.748888] (voyager_msgs) StdoutLine: {'line': b'writing voyager_msgs.egg-info/PKG-INFO\n'}
+[2.749041] (voyager_msgs) StdoutLine: {'line': b'writing dependency_links to voyager_msgs.egg-info/dependency_links.txt\n'}
+[2.749216] (voyager_msgs) StdoutLine: {'line': b'writing top-level names to voyager_msgs.egg-info/top_level.txt\n'}
+[2.749372] (voyager_msgs) StdoutLine: {'line': b"writing manifest file 'voyager_msgs.egg-info/SOURCES.txt'\n"}
+[2.751303] (voyager_msgs) StdoutLine: {'line': b"reading manifest file 'voyager_msgs.egg-info/SOURCES.txt'\n"}
+[2.751942] (voyager_msgs) StdoutLine: {'line': b"writing manifest file 'voyager_msgs.egg-info/SOURCES.txt'\n"}
+[2.756338] (voyager_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/voyager_msgs__rosidl_generator_c.dir/rosidl_generator_c/voyager_msgs/srv/detail/get_transform__functions.c.o\x1b[0m\n'}
+[2.785571] (voyager_msgs) StdoutLine: {'line': b'[  9%] Built target voyager_msgs__cpp\n'}
+[2.791678] (voyager_msgs) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_build_voyager_msgs_egg\n'}
+[2.796682] (voyager_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.796937] (voyager_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.797068] (voyager_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.807725] (-) TimerEvent: {}
+[2.848968] (voyager_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libvoyager_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.888184] (voyager_msgs) StdoutLine: {'line': b'[ 22%] Built target voyager_msgs__rosidl_generator_c\n'}
+[2.899220] (voyager_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.899456] (voyager_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.905828] (voyager_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.907838] (-) TimerEvent: {}
+[3.008162] (-) TimerEvent: {}
+[3.017639] (voyager_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/voyager_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voyager_msgs/srv/get_transform__type_support.cpp.o\x1b[0m\n'}
+[3.057987] (voyager_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/voyager_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/voyager_msgs/srv/detail/dds_fastrtps/get_transform__type_support.cpp.o\x1b[0m\n'}
+[3.067300] (voyager_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/voyager_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/voyager_msgs/srv/detail/get_transform__type_support.cpp.o\x1b[0m\n'}
+[3.108309] (-) TimerEvent: {}
+[3.132883] (voyager_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/voyager_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/voyager_msgs/srv/get_transform__type_support.cpp.o\x1b[0m\n'}
+[3.154204] (voyager_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/voyager_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/voyager_msgs/srv/detail/get_transform__type_support.c.o\x1b[0m\n'}
+[3.158463] (voyager_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/voyager_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/voyager_msgs/srv/detail/get_transform__type_support_c.cpp.o\x1b[0m\n'}
+[3.169872] (voyager_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libvoyager_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.197297] (voyager_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libvoyager_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.208448] (-) TimerEvent: {}
+[3.213924] (voyager_msgs) StdoutLine: {'line': b'[ 58%] Built target voyager_msgs__rosidl_typesupport_c\n'}
+[3.232995] (voyager_msgs) StdoutLine: {'line': b'[ 58%] Built target voyager_msgs__rosidl_typesupport_introspection_c\n'}
+[3.275709] (voyager_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libvoyager_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.308597] (-) TimerEvent: {}
+[3.326516] (voyager_msgs) StdoutLine: {'line': b'[ 61%] Built target voyager_msgs__rosidl_typesupport_cpp\n'}
+[3.408714] (-) TimerEvent: {}
+[3.416468] (voyager_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libvoyager_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.421782] (voyager_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libvoyager_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.468981] (voyager_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libvoyager_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.508880] (-) TimerEvent: {}
+[3.512612] (voyager_msgs) StdoutLine: {'line': b'[ 70%] Built target voyager_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.526776] (voyager_msgs) StdoutLine: {'line': b'[ 70%] Built target voyager_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.577038] (voyager_msgs) StdoutLine: {'line': b'[ 70%] Built target voyager_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.609038] (-) TimerEvent: {}
+[3.623780] (voyager_msgs) StdoutLine: {'line': b'[ 70%] Built target voyager_msgs\n'}
+[3.670592] (voyager_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.709198] (-) TimerEvent: {}
+[3.809539] (-) TimerEvent: {}
+[3.910207] (-) TimerEvent: {}
+[3.999057] (voyager_msgs) StdoutLine: {'line': b'[ 74%] Built target voyager_msgs__py\n'}
+[4.010669] (-) TimerEvent: {}
+[4.042598] (voyager_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/voyager_msgs__rosidl_generator_py.dir/rosidl_generator_py/voyager_msgs/srv/_get_transform_s.c.o\x1b[0m\n'}
+[4.111144] (-) TimerEvent: {}
+[4.199016] (voyager_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/voyager_msgs/libvoyager_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[4.211294] (-) TimerEvent: {}
+[4.257574] (voyager_msgs) StdoutLine: {'line': b'[ 80%] Built target voyager_msgs__rosidl_generator_py\n'}
+[4.279446] (voyager_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/voyager_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/voyager_msgs/_voyager_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.285960] (voyager_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/voyager_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/voyager_msgs/_voyager_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.289115] (voyager_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/voyager_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/voyager_msgs/_voyager_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.311423] (-) TimerEvent: {}
+[4.393197] (voyager_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/voyager_msgs/voyager_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.411578] (-) TimerEvent: {}
+[4.415610] (voyager_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/voyager_msgs/voyager_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.415927] (voyager_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/voyager_msgs/voyager_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.436564] (voyager_msgs) StdoutLine: {'line': b'[100%] Built target voyager_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[4.467481] (voyager_msgs) StdoutLine: {'line': b'[100%] Built target voyager_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.469258] (voyager_msgs) StdoutLine: {'line': b'[100%] Built target voyager_msgs__rosidl_typesupport_c__pyext\n'}
+[4.482680] (voyager_msgs) CommandEnded: {'returncode': 0}
+[4.511706] (-) TimerEvent: {}
+[4.577890] (voyager_msgs) JobProgress: {'identifier': 'voyager_msgs', 'progress': 'install'}
+[4.588360] (voyager_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sithija/voyager_ws/build/voyager_msgs'], 'cwd': '/home/sithija/voyager_ws/build/voyager_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sithija'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sithija'), ('CYCLONEDDS_URI', '/home/sithija/.ros/dds.xml'), ('OLDPWD', '/home/sithija'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2147'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'sithija'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sithija'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/sithija/.cargo/bin:/home/sithija/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin/python3'), ('SESSION_MANAGER', 'local/sithija-rog:@/tmp/.ICE-unix/2086,unix/sithija-rog:/tmp/.ICE-unix/2086'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afddec43_5180_4cc7_bef1_21aa788fffb1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.300'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sithija/voyager_ws/build/voyager_msgs'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.595687] (voyager_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.596123] (voyager_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.596424] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/ament_index/resource_index/rosidl_interfaces/voyager_msgs\n'}
+[4.606401] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.611861] (-) TimerEvent: {}
+[4.624260] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/srv/detail/get_transform__functions.h\n'}
+[4.633708] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/srv/detail/get_transform__struct.h\n'}
+[4.643006] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/srv/detail/get_transform__type_support.h\n'}
+[4.653034] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/srv/get_transform.h\n'}
+[4.679751] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/environment/library_path.sh\n'}
+[4.689685] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/environment/library_path.dsv\n'}
+[4.700202] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.709947] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/srv/detail/get_transform__rosidl_typesupport_fastrtps_c.h\n'}
+[4.711993] (-) TimerEvent: {}
+[4.720227] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/srv/detail/get_transform__builder.hpp\n'}
+[4.740084] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/srv/detail/get_transform__struct.hpp\n'}
+[4.750064] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/srv/detail/get_transform__traits.hpp\n'}
+[4.759659] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/srv/get_transform.hpp\n'}
+[4.780808] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.794715] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/srv/detail/get_transform__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.804723] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.812129] (-) TimerEvent: {}
+[4.824597] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/srv/detail/get_transform__rosidl_typesupport_introspection_c.h\n'}
+[4.834170] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/include/voyager_msgs/voyager_msgs/srv/detail/get_transform__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.853803] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/environment/pythonpath.sh\n'}
+[4.863312] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/environment/pythonpath.dsv\n'}
+[4.873840] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[4.894904] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[4.911819] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[4.912210] (-) TimerEvent: {}
+[4.933783] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[4.956064] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/__init__.py\n'}
+[4.977768] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/_voyager_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[4.999733] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/_voyager_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.012379] (-) TimerEvent: {}
+[5.019926] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/_voyager_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.041468] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/libvoyager_msgs__rosidl_generator_py.so\n'}
+[5.060723] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/srv/__init__.py\n'}
+[5.081523] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/srv/_get_transform.py\n'}
+[5.095002] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/srv/_get_transform_s.c\n'}
+[5.104333] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/voyager_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.112533] (-) TimerEvent: {}
+[5.124359] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/voyager_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.133760] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/voyager_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.154658] (voyager_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/voyager_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.155014] (voyager_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/voyager_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.155206] (voyager_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/voyager_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.155385] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/srv/GetTransform.idl\n'}
+[5.175364] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/srv/GetTransform.srv\n'}
+[5.192712] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/srv/GetTransform_Request.msg\n'}
+[5.212691] (-) TimerEvent: {}
+[5.213000] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/srv/GetTransform_Response.msg\n'}
+[5.233963] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/ament_index/resource_index/package_run_dependencies/voyager_msgs\n'}
+[5.255204] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/ament_index/resource_index/parent_prefix_path/voyager_msgs\n'}
+[5.265531] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/environment/ament_prefix_path.sh\n'}
+[5.287395] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/environment/ament_prefix_path.dsv\n'}
+[5.297248] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/environment/path.sh\n'}
+[5.312852] (-) TimerEvent: {}
+[5.317324] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/environment/path.dsv\n'}
+[5.327071] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/local_setup.bash\n'}
+[5.337247] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/local_setup.sh\n'}
+[5.357204] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/local_setup.zsh\n'}
+[5.367377] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/local_setup.dsv\n'}
+[5.377513] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/package.dsv\n'}
+[5.387190] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/ament_index/resource_index/packages/voyager_msgs\n'}
+[5.397225] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.413015] (-) TimerEvent: {}
+[5.417035] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.427652] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.448584] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.458384] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.467933] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.489056] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.499706] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/voyager_msgsConfig.cmake\n'}
+[5.513166] (-) TimerEvent: {}
+[5.520422] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/voyager_msgsConfig-version.cmake\n'}
+[5.530322] (voyager_msgs) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/package.xml\n'}
+[5.550840] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_generator_c.so\n'}
+[5.551240] (voyager_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_generator_c.so" to ""\n'}
+[5.551440] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.551716] (voyager_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.551981] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.552857] (voyager_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.553059] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.553376] (voyager_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.553549] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_typesupport_c.so\n'}
+[5.553780] (voyager_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_typesupport_c.so" to ""\n'}
+[5.553947] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.554151] (voyager_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.554361] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_typesupport_cpp.so\n'}
+[5.554570] (voyager_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[5.611015] (voyager_msgs) StdoutLine: {'line': b"Listing '/home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs'...\n"}
+[5.611253] (voyager_msgs) StdoutLine: {'line': b"Compiling '/home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/__init__.py'...\n"}
+[5.611374] (voyager_msgs) StdoutLine: {'line': b"Listing '/home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/srv'...\n"}
+[5.611486] (voyager_msgs) StdoutLine: {'line': b"Compiling '/home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/srv/__init__.py'...\n"}
+[5.611600] (voyager_msgs) StdoutLine: {'line': b"Compiling '/home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages/voyager_msgs/srv/_get_transform.py'...\n"}
+[5.613302] (-) TimerEvent: {}
+[5.614952] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_generator_py.so\n'}
+[5.615357] (voyager_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/sithija/voyager_ws/install/voyager_msgs/lib/libvoyager_msgs__rosidl_generator_py.so" to ""\n'}
+[5.615625] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/export_voyager_msgs__rosidl_generator_cExport.cmake\n'}
+[5.615798] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/export_voyager_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.616041] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/export_voyager_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.616210] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/export_voyager_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.616384] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/export_voyager_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.616687] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/export_voyager_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.616908] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/export_voyager_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.617061] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/voyager_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.617222] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/voyager_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.617395] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/voyager_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.617520] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/voyager_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.617684] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/voyager_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.617804] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/voyager_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.617942] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/voyager_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.618089] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/voyager_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.618237] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/export_voyager_msgs__rosidl_generator_pyExport.cmake\n'}
+[5.618395] (voyager_msgs) StdoutLine: {'line': b'-- Installing: /home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake/export_voyager_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.620994] (voyager_msgs) CommandEnded: {'returncode': 0}
+[5.713454] (-) TimerEvent: {}
+[5.813919] (-) TimerEvent: {}
+[5.915230] (-) TimerEvent: {}
+[5.935728] (voyager_msgs) JobEnded: {'identifier': 'voyager_msgs', 'rc': 0}
+[5.937026] (voyager_description) JobStarted: {'identifier': 'voyager_description'}
+[5.989575] (voyager_description) JobProgress: {'identifier': 'voyager_description', 'progress': 'cmake'}
+[5.990458] (voyager_description) Command: {'cmd': ['/usr/bin/cmake', '/home/sithija/voyager_ws/src/voyager_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/sithija/voyager_ws/install/voyager_description'], 'cwd': '/home/sithija/voyager_ws/build/voyager_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sithija'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sithija/voyager_ws/install/voyager_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sithija'), ('CYCLONEDDS_URI', '/home/sithija/.ros/dds.xml'), ('OLDPWD', '/home/sithija'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2147'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'sithija'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sithija'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/sithija/.cargo/bin:/home/sithija/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin/python3'), ('SESSION_MANAGER', 'local/sithija-rog:@/tmp/.ICE-unix/2086,unix/sithija-rog:/tmp/.ICE-unix/2086'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afddec43_5180_4cc7_bef1_21aa788fffb1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.300'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/home/sithija/voyager_ws/install/voyager_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sithija/voyager_ws/build/voyager_description'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sithija/voyager_ws/install/voyager_msgs:/opt/ros/humble')]), 'shell': False}
+[6.015382] (-) TimerEvent: {}
+[6.103954] (voyager_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[6.115505] (-) TimerEvent: {}
+[6.212724] (voyager_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[6.215651] (-) TimerEvent: {}
+[6.231483] (voyager_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.315804] (-) TimerEvent: {}
+[6.393329] (voyager_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.411893] (voyager_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.412475] (voyager_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.413384] (voyager_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.415893] (-) TimerEvent: {}
+[6.420739] (voyager_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.516079] (-) TimerEvent: {}
+[6.570754] (voyager_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.590923] (voyager_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.591693] (voyager_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.592895] (voyager_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.600069] (voyager_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[6.616212] (-) TimerEvent: {}
+[6.716638] (-) TimerEvent: {}
+[6.817009] (-) TimerEvent: {}
+[6.833844] (voyager_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[6.888569] (voyager_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[6.917164] (-) TimerEvent: {}
+[6.971679] (voyager_description) StdoutLine: {'line': b'-- Found voyager_msgs: 0.0.0 (/home/sithija/voyager_ws/install/voyager_msgs/share/voyager_msgs/cmake)\n'}
+[7.016900] (voyager_description) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.017224] (-) TimerEvent: {}
+[7.022538] (voyager_description) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.031018] (voyager_description) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[7.043802] (voyager_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.062116] (voyager_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.117383] (-) TimerEvent: {}
+[7.217744] (-) TimerEvent: {}
+[7.248406] (voyager_description) StdoutLine: {'line': b'-- Found tf2: 0.25.5 (/opt/ros/humble/share/tf2/cmake)\n'}
+[7.265711] (voyager_description) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.5 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[7.317886] (-) TimerEvent: {}
+[7.383366] (voyager_description) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[7.386649] (voyager_description) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[7.415793] (voyager_description) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[7.418001] (-) TimerEvent: {}
+[7.425461] (voyager_description) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.518153] (-) TimerEvent: {}
+[7.534618] (voyager_description) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.534991] (voyager_description) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.618326] (-) TimerEvent: {}
+[7.676282] (voyager_description) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[7.678371] (voyager_description) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.718873] (-) TimerEvent: {}
+[7.819313] (-) TimerEvent: {}
+[7.919652] (-) TimerEvent: {}
+[8.019985] (-) TimerEvent: {}
+[8.104148] (voyager_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[8.120156] (-) TimerEvent: {}
+[8.205814] (voyager_description) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[8.206091] (voyager_description) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/sithija/voyager_ws/src/voyager_description/include\n'}
+[8.206214] (voyager_description) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[8.206535] (voyager_description) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[8.207296] (voyager_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.207844] (voyager_description) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[8.209570] (voyager_description) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[8.209794] (voyager_description) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[8.210077] (voyager_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.211582] (voyager_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.220302] (-) TimerEvent: {}
+[8.223696] (voyager_description) StdoutLine: {'line': b'-- Generating done\n'}
+[8.225356] (voyager_description) StdoutLine: {'line': b'-- Build files have been written to: /home/sithija/voyager_ws/build/voyager_description\n'}
+[8.235138] (voyager_description) CommandEnded: {'returncode': 0}
+[8.236150] (voyager_description) JobProgress: {'identifier': 'voyager_description', 'progress': 'build'}
+[8.237619] (voyager_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sithija/voyager_ws/build/voyager_description', '--', '-j16', '-l16'], 'cwd': '/home/sithija/voyager_ws/build/voyager_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sithija'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sithija/voyager_ws/install/voyager_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sithija'), ('CYCLONEDDS_URI', '/home/sithija/.ros/dds.xml'), ('OLDPWD', '/home/sithija'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2147'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'sithija'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sithija'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/sithija/.cargo/bin:/home/sithija/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin/python3'), ('SESSION_MANAGER', 'local/sithija-rog:@/tmp/.ICE-unix/2086,unix/sithija-rog:/tmp/.ICE-unix/2086'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afddec43_5180_4cc7_bef1_21aa788fffb1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.300'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/home/sithija/voyager_ws/install/voyager_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sithija/voyager_ws/build/voyager_description'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sithija/voyager_ws/install/voyager_msgs:/opt/ros/humble')]), 'shell': False}
+[8.313353] (voyager_description) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera_tf_kinematics.dir/src/camera_tf_kinematics.cpp.o\x1b[0m\n'}
+[8.320450] (-) TimerEvent: {}
+[8.420820] (-) TimerEvent: {}
+[8.521730] (-) TimerEvent: {}
+[8.622102] (-) TimerEvent: {}
+[8.722465] (-) TimerEvent: {}
+[8.822872] (-) TimerEvent: {}
+[8.923320] (-) TimerEvent: {}
+[9.023630] (-) TimerEvent: {}
+[9.123947] (-) TimerEvent: {}
+[9.224242] (-) TimerEvent: {}
+[9.277980] (voyager_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable base_controller\x1b[0m\n'}
+[9.324422] (-) TimerEvent: {}
+[9.424886] (-) TimerEvent: {}
+[9.525332] (-) TimerEvent: {}
+[9.625709] (-) TimerEvent: {}
+[9.726367] (-) TimerEvent: {}
+[9.740489] (voyager_controller) StdoutLine: {'line': b'[100%] Built target base_controller\n'}
+[9.751891] (voyager_controller) CommandEnded: {'returncode': 0}
+[9.792370] (voyager_controller) JobProgress: {'identifier': 'voyager_controller', 'progress': 'install'}
+[9.793465] (voyager_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sithija/voyager_ws/build/voyager_controller'], 'cwd': '/home/sithija/voyager_ws/build/voyager_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sithija'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sithija'), ('CYCLONEDDS_URI', '/home/sithija/.ros/dds.xml'), ('OLDPWD', '/home/sithija'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2147'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'sithija'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sithija'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/sithija/.cargo/bin:/home/sithija/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin/python3'), ('SESSION_MANAGER', 'local/sithija-rog:@/tmp/.ICE-unix/2086,unix/sithija-rog:/tmp/.ICE-unix/2086'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afddec43_5180_4cc7_bef1_21aa788fffb1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.300'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sithija/voyager_ws/build/voyager_controller'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[9.808644] (voyager_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.809471] (voyager_controller) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[9.811182] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/include/include/voyager_controller/base_controller.hpp\n'}
+[9.822203] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/lib/voyager_controller/base_controller\n'}
+[9.826944] (-) TimerEvent: {}
+[9.832146] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/config/voyager_controllers.yaml\n'}
+[9.852989] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/launch/base_controller.launch.py\n'}
+[9.870303] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/ament_index/resource_index/package_run_dependencies/voyager_controller\n'}
+[9.880068] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/ament_index/resource_index/parent_prefix_path/voyager_controller\n'}
+[9.900279] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/environment/ament_prefix_path.sh\n'}
+[9.909934] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/environment/ament_prefix_path.dsv\n'}
+[9.927121] (-) TimerEvent: {}
+[9.929961] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/environment/path.sh\n'}
+[9.940055] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/environment/path.dsv\n'}
+[9.958289] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/local_setup.bash\n'}
+[9.968713] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/local_setup.sh\n'}
+[9.988990] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/local_setup.zsh\n'}
+[9.998735] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/local_setup.dsv\n'}
+[10.007690] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/package.dsv\n'}
+[10.027245] (-) TimerEvent: {}
+[10.027575] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/ament_index/resource_index/packages/voyager_controller\n'}
+[10.037577] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/cmake/voyager_controllerConfig.cmake\n'}
+[10.057177] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/cmake/voyager_controllerConfig-version.cmake\n'}
+[10.077723] (voyager_controller) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/package.xml\n'}
+[10.090164] (voyager_controller) CommandEnded: {'returncode': 0}
+[10.127472] (-) TimerEvent: {}
+[10.228114] (-) TimerEvent: {}
+[10.240910] (voyager_controller) JobEnded: {'identifier': 'voyager_controller', 'rc': 0}
+[10.328309] (-) TimerEvent: {}
+[10.428729] (-) TimerEvent: {}
+[10.529153] (-) TimerEvent: {}
+[10.629571] (-) TimerEvent: {}
+[10.729962] (-) TimerEvent: {}
+[10.830691] (-) TimerEvent: {}
+[10.931118] (-) TimerEvent: {}
+[11.031514] (-) TimerEvent: {}
+[11.131882] (-) TimerEvent: {}
+[11.232300] (-) TimerEvent: {}
+[11.332725] (-) TimerEvent: {}
+[11.433174] (-) TimerEvent: {}
+[11.533599] (-) TimerEvent: {}
+[11.634023] (-) TimerEvent: {}
+[11.734442] (-) TimerEvent: {}
+[11.834891] (-) TimerEvent: {}
+[11.935314] (-) TimerEvent: {}
+[12.035711] (-) TimerEvent: {}
+[12.136083] (-) TimerEvent: {}
+[12.236508] (-) TimerEvent: {}
+[12.336931] (-) TimerEvent: {}
+[12.437343] (-) TimerEvent: {}
+[12.537717] (-) TimerEvent: {}
+[12.570410] (voyager_description) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable camera_tf_kinematics\x1b[0m\n'}
+[12.637896] (-) TimerEvent: {}
+[12.738298] (-) TimerEvent: {}
+[12.838683] (-) TimerEvent: {}
+[12.849241] (voyager_description) StdoutLine: {'line': b'[100%] Built target camera_tf_kinematics\n'}
+[12.864208] (voyager_description) CommandEnded: {'returncode': 0}
+[12.903095] (voyager_description) JobProgress: {'identifier': 'voyager_description', 'progress': 'install'}
+[12.904590] (voyager_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sithija/voyager_ws/build/voyager_description'], 'cwd': '/home/sithija/voyager_ws/build/voyager_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sithija'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sithija/voyager_ws/install/voyager_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sithija'), ('CYCLONEDDS_URI', '/home/sithija/.ros/dds.xml'), ('OLDPWD', '/home/sithija'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2147'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'sithija'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sithija'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/sithija/.cargo/bin:/home/sithija/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin/python3'), ('SESSION_MANAGER', 'local/sithija-rog:@/tmp/.ICE-unix/2086,unix/sithija-rog:/tmp/.ICE-unix/2086'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afddec43_5180_4cc7_bef1_21aa788fffb1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.300'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/home/sithija/voyager_ws/install/voyager_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sithija/voyager_ws/build/voyager_description'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sithija/voyager_ws/install/voyager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sithija/voyager_ws/install/voyager_msgs:/opt/ros/humble')]), 'shell': False}
+[12.911221] (voyager_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.911585] (voyager_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[12.912217] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/urdf/.vscode/c_cpp_properties.json\n'}
+[12.934146] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/urdf/.vscode/settings.json\n'}
+[12.939035] (-) TimerEvent: {}
+[12.955814] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/urdf/inertia_calculator.py\n'}
+[12.977443] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/urdf/voyager.urdf.xacro\n'}
+[12.998356] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/urdf/voyager_control.xacro\n'}
+[13.020200] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/urdf/voyager_gazebo.xacro\n'}
+[13.039299] (-) TimerEvent: {}
+[13.041459] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/meshes/wheel.STL\n'}
+[13.061680] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/launch/display.launch.py\n'}
+[13.081857] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/launch/voyager_gazebo.launch.py\n'}
+[13.102129] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/rviz/display.rviz\n'}
+[13.123182] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/lib/voyager_description/camera_tf_kinematics\n'}
+[13.139489] (-) TimerEvent: {}
+[13.146241] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/ament_index/resource_index/package_run_dependencies/voyager_description\n'}
+[13.157620] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/ament_index/resource_index/parent_prefix_path/voyager_description\n'}
+[13.179341] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/environment/ament_prefix_path.sh\n'}
+[13.190204] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/environment/ament_prefix_path.dsv\n'}
+[13.213247] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/environment/path.sh\n'}
+[13.234960] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/environment/path.dsv\n'}
+[13.239618] (-) TimerEvent: {}
+[13.257428] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/local_setup.bash\n'}
+[13.278637] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/local_setup.sh\n'}
+[13.302105] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/local_setup.zsh\n'}
+[13.324745] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/local_setup.dsv\n'}
+[13.339793] (-) TimerEvent: {}
+[13.347732] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/package.dsv\n'}
+[13.370720] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/ament_index/resource_index/packages/voyager_description\n'}
+[13.387454] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/cmake/voyager_descriptionConfig.cmake\n'}
+[13.409343] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/cmake/voyager_descriptionConfig-version.cmake\n'}
+[13.419991] (voyager_description) StdoutLine: {'line': b'-- Symlinking: /home/sithija/voyager_ws/install/voyager_description/share/voyager_description/package.xml\n'}
+[13.439951] (-) TimerEvent: {}
+[13.446444] (voyager_description) CommandEnded: {'returncode': 0}
+[13.540145] (-) TimerEvent: {}
+[13.640843] (-) TimerEvent: {}
+[13.660600] (voyager_description) JobEnded: {'identifier': 'voyager_description', 'rc': 0}
+[13.661477] (-) EventReactorShutdown: {}
