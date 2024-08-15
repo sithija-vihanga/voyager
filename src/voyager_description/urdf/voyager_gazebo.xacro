@@ -17,6 +17,22 @@
         </joint>
     </transmission>
 
+    <transmission name="RL_wheel_transmission">
+        <plugin>transmission_interface/SimpleTransmission</plugin>
+        <actuator name="RL_motor" role="actuator_left"/>
+        <joint name="wheel_rear_left_joint" role="joint_left">
+           <mechanicalReduction>1.0</mechanicalReduction>
+        </joint>
+    </transmission>
+
+    <transmission name="RR_wheel_transmission">
+        <plugin>transmission_interface/SimpleTransmission</plugin>
+        <actuator name="RR_motor" role="actuator_right"/>
+        <joint name="wheel_rear_right_joint" role="joint_right">
+           <mechanicalReduction>1.0</mechanicalReduction>
+        </joint>
+    </transmission>
+
     <transmission name="camera_continuoius_transmission">
         <plugin>transmission_interface/SimpleTransmission</plugin>
         <actuator name="camera_actuator"/>
@@ -26,43 +42,43 @@
     </transmission>
 
     <gazebo reference="wheel_front_left_link">
-        <mu1>1000000000000000.0</mu1>  <!--1000000000000000.0-->
-        <mu2>1000.0</mu2>
-        <kp>1000000000000.0</kp>
+        <mu1>0.2</mu1>  <!--1000000000000000.0-->
+        <mu2>0.2</mu2>
+        <!-- <kp>1000000000000.0</kp>
         <kd>10.0</kd>
         <minDepth>0.001</minDepth>
         <maxVel>0.1</maxVel>
-        <fdir1>1 0 0</fdir1>
+        <fdir1>1 0 0</fdir1> -->
     </gazebo>
 
      <gazebo reference="wheel_front_right_link">
-        <mu1>1000000000000000.0</mu1>
-        <mu2>1000.0</mu2>
-        <kp>1000000000000.0</kp>
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <!-- <kp>1000000000000.0</kp>
         <kd>10.0</kd>
         <minDepth>0.001</minDepth>
         <maxVel>0.1</maxVel>
-        <fdir1>1 0 0</fdir1>
+        <fdir1>1 0 0</fdir1> -->
     </gazebo>
 
      <gazebo reference="wheel_rear_left_link">
-        <mu1>1000000000000000.0</mu1>
-        <mu2>1000.0</mu2>
-        <kp>1000000000000.0</kp>
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <!-- <kp>1000000000000.0</kp>
         <kd>10.0</kd>
         <minDepth>0.001</minDepth>
         <maxVel>0.1</maxVel>
-        <fdir1>1 0 0</fdir1>
+        <fdir1>1 0 0</fdir1> -->
     </gazebo>
 
      <gazebo reference="wheel_rear_right_link">
-        <mu1>1000000000000000.0</mu1>
-        <mu2>1000.0</mu2>
-        <kp>1000000000000.0</kp>
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <!-- <kp>1000000000000.0</kp>
         <kd>10.0</kd>
         <minDepth>0.001</minDepth>
         <maxVel>0.1</maxVel>
-        <fdir1>1 0 0</fdir1>
+        <fdir1>1 0 0</fdir1> -->
     </gazebo>
 
     <gazebo>
