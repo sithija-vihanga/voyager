@@ -69,15 +69,33 @@ def generate_launch_description():
         ]
     )
 
-    cam_controller = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=[
-            "camera_velocity_controller",
-            "--controller-manager",
-            "/controller_manager"
+    cam_controller = GroupAction(
+        actions=[
+            Node(
+                package="controller_manager",
+                executable="spawner",
+                arguments=[
+                    "camera_position_controller",
+                    "--controller-manager",
+                    "/controller_manager"
+        ]),
+
+            Node(
+                package = "voyager_controller",
+                executable= "cam_controller"
+                )
         ]
     )
+
+    # cam_controller = Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=[
+    #         "camera_velocity_controller",
+    #         "--controller-manager",
+    #         "/controller_manager"
+    #     ]
+    # )
 
     # position_controller = Node(
     #     package="controller_manager",

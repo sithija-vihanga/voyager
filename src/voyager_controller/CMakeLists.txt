@@ -22,12 +22,20 @@ include_directories(${EIGEN3_INCLUDE_DIR})
 add_executable(base_controller src/base_controller.cpp)
 ament_target_dependencies(base_controller rclcpp geometry_msgs std_msgs sensor_msgs nav_msgs tf2 tf2_ros ${Eigen_LIBRARIES})
 
+add_executable(cam_controller src/cam_controller.cpp)
+ament_target_dependencies(cam_controller rclcpp geometry_msgs std_msgs)
+
 install(
   DIRECTORY include
   DESTINATION include
 )
 install(
   TARGETS base_controller
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(
+  TARGETS cam_controller
   DESTINATION lib/${PROJECT_NAME}
 )
 

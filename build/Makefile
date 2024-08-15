@@ -210,6 +210,19 @@ base_controller/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_controller.dir/build.make CMakeFiles/base_controller.dir/build
 .PHONY : base_controller/fast
 
+#=============================================================================
+# Target rules for targets named cam_controller
+
+# Build rule for target.
+cam_controller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cam_controller
+.PHONY : cam_controller
+
+# fast build rule for target.
+cam_controller/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_controller.dir/build.make CMakeFiles/cam_controller.dir/build
+.PHONY : cam_controller/fast
+
 src/base_controller.o: src/base_controller.cpp.o
 .PHONY : src/base_controller.o
 
@@ -234,6 +247,30 @@ src/base_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_controller.dir/build.make CMakeFiles/base_controller.dir/src/base_controller.cpp.s
 .PHONY : src/base_controller.cpp.s
 
+src/cam_controller.o: src/cam_controller.cpp.o
+.PHONY : src/cam_controller.o
+
+# target to build an object file
+src/cam_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_controller.dir/build.make CMakeFiles/cam_controller.dir/src/cam_controller.cpp.o
+.PHONY : src/cam_controller.cpp.o
+
+src/cam_controller.i: src/cam_controller.cpp.i
+.PHONY : src/cam_controller.i
+
+# target to preprocess a source file
+src/cam_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_controller.dir/build.make CMakeFiles/cam_controller.dir/src/cam_controller.cpp.i
+.PHONY : src/cam_controller.cpp.i
+
+src/cam_controller.s: src/cam_controller.cpp.s
+.PHONY : src/cam_controller.s
+
+# target to generate assembly for a file
+src/cam_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_controller.dir/build.make CMakeFiles/cam_controller.dir/src/cam_controller.cpp.s
+.PHONY : src/cam_controller.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... uninstall"
 	@echo "... voyager_controller_uninstall"
 	@echo "... base_controller"
+	@echo "... cam_controller"
 	@echo "... src/base_controller.o"
 	@echo "... src/base_controller.i"
 	@echo "... src/base_controller.s"
+	@echo "... src/cam_controller.o"
+	@echo "... src/cam_controller.i"
+	@echo "... src/cam_controller.s"
 .PHONY : help
 
 

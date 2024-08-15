@@ -48,7 +48,7 @@
         
         <!-- camera control-->
         <joint name="camera_base_joint">
-            <command_interface name="velocity">
+            <command_interface name="position">
                 <param name="min">.1</param>
                 <param name="max">.5</param>
 
