@@ -1,6 +1,7 @@
 /home/sithija/voyager_ws/build/voyager_controller/CMakeFiles/uninstall.dir
 /home/sithija/voyager_ws/build/voyager_controller/CMakeFiles/voyager_controller_uninstall.dir
 /home/sithija/voyager_ws/build/voyager_controller/CMakeFiles/base_controller.dir
+/home/sithija/voyager_ws/build/voyager_controller/CMakeFiles/noisy_controller.dir
 /home/sithija/voyager_ws/build/voyager_controller/CMakeFiles/cam_controller.dir
 /home/sithija/voyager_ws/build/voyager_controller/CMakeFiles/test.dir
 /home/sithija/voyager_ws/build/voyager_controller/CMakeFiles/edit_cache.dir

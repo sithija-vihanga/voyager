@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/sithija/voyager_ws/build
 
 # The main recursive "all" target.
 all: CMakeFiles/base_controller.dir/all
+all: CMakeFiles/noisy_controller.dir/all
 all: CMakeFiles/cam_controller.dir/all
 .PHONY : all
 
@@ -75,6 +76,7 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/voyager_controller_uninstall.dir/clean
 clean: CMakeFiles/base_controller.dir/clean
+clean: CMakeFiles/noisy_controller.dir/clean
 clean: CMakeFiles/cam_controller.dir/clean
 .PHONY : clean
 
@@ -155,6 +157,32 @@ base_controller: CMakeFiles/base_controller.dir/rule
 CMakeFiles/base_controller.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_controller.dir/build.make CMakeFiles/base_controller.dir/clean
 .PHONY : CMakeFiles/base_controller.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/noisy_controller.dir
+
+# All Build rule for target.
+CMakeFiles/noisy_controller.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/noisy_controller.dir/build.make CMakeFiles/noisy_controller.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/noisy_controller.dir/build.make CMakeFiles/noisy_controller.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sithija/voyager_ws/build/CMakeFiles --progress-num=5,6 "Built target noisy_controller"
+.PHONY : CMakeFiles/noisy_controller.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/noisy_controller.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sithija/voyager_ws/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/noisy_controller.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sithija/voyager_ws/build/CMakeFiles 0
+.PHONY : CMakeFiles/noisy_controller.dir/rule
+
+# Convenience name for target.
+noisy_controller: CMakeFiles/noisy_controller.dir/rule
+.PHONY : noisy_controller
+
+# clean rule for target.
+CMakeFiles/noisy_controller.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/noisy_controller.dir/build.make CMakeFiles/noisy_controller.dir/clean
+.PHONY : CMakeFiles/noisy_controller.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/cam_controller.dir

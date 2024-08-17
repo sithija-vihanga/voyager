@@ -1,6 +1,8 @@
 /home/sithija/voyager_ws/install/voyager_controller/include/include/voyager_controller/base_controller.hpp
 /home/sithija/voyager_ws/install/voyager_controller/include/include/voyager_controller/cam_controller.hpp
+/home/sithija/voyager_ws/install/voyager_controller/include/include/voyager_controller/noisy_controller.hpp
 /home/sithija/voyager_ws/install/voyager_controller/lib/voyager_controller/base_controller
+/home/sithija/voyager_ws/install/voyager_controller/lib/voyager_controller/noisy_controller
 /home/sithija/voyager_ws/install/voyager_controller/lib/voyager_controller/cam_controller
 /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/config/joy_config.yaml
 /home/sithija/voyager_ws/install/voyager_controller/share/voyager_controller/config/joy_teleop.yaml

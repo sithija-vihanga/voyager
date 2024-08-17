@@ -22,6 +22,10 @@ include_directories(${EIGEN3_INCLUDE_DIR})
 add_executable(base_controller src/base_controller.cpp)
 ament_target_dependencies(base_controller rclcpp geometry_msgs std_msgs sensor_msgs nav_msgs tf2 tf2_ros ${Eigen_LIBRARIES})
 
+
+add_executable(noisy_controller src/noisy_controller.cpp)
+ament_target_dependencies(noisy_controller rclcpp  std_msgs sensor_msgs nav_msgs tf2 tf2_ros )
+
 add_executable(cam_controller src/cam_controller.cpp)
 ament_target_dependencies(cam_controller rclcpp geometry_msgs std_msgs)
 
@@ -31,6 +35,11 @@ install(
 )
 install(
   TARGETS base_controller
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(
+  TARGETS noisy_controller
   DESTINATION lib/${PROJECT_NAME}
 )
 

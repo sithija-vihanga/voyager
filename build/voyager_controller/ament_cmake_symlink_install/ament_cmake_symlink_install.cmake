@@ -316,8 +316,11 @@ ament_cmake_symlink_install_directory("/home/sithija/voyager_ws/src/voyager_cont
 # install("TARGETS" "base_controller" "DESTINATION" "lib/voyager_controller")
 include("/home/sithija/voyager_ws/build/voyager_controller/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "cam_controller" "DESTINATION" "lib/voyager_controller")
+# install("TARGETS" "noisy_controller" "DESTINATION" "lib/voyager_controller")
 include("/home/sithija/voyager_ws/build/voyager_controller/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "cam_controller" "DESTINATION" "lib/voyager_controller")
+include("/home/sithija/voyager_ws/build/voyager_controller/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "config" "launch" "DESTINATION" "share/voyager_controller")
 ament_cmake_symlink_install_directory("/home/sithija/voyager_ws/src/voyager_controller" DIRECTORY "config" "launch" "DESTINATION" "share/voyager_controller")

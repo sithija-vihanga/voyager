@@ -211,6 +211,19 @@ base_controller/fast:
 .PHONY : base_controller/fast
 
 #=============================================================================
+# Target rules for targets named noisy_controller
+
+# Build rule for target.
+noisy_controller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 noisy_controller
+.PHONY : noisy_controller
+
+# fast build rule for target.
+noisy_controller/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/noisy_controller.dir/build.make CMakeFiles/noisy_controller.dir/build
+.PHONY : noisy_controller/fast
+
+#=============================================================================
 # Target rules for targets named cam_controller
 
 # Build rule for target.
@@ -271,6 +284,30 @@ src/cam_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_controller.dir/build.make CMakeFiles/cam_controller.dir/src/cam_controller.cpp.s
 .PHONY : src/cam_controller.cpp.s
 
+src/noisy_controller.o: src/noisy_controller.cpp.o
+.PHONY : src/noisy_controller.o
+
+# target to build an object file
+src/noisy_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/noisy_controller.dir/build.make CMakeFiles/noisy_controller.dir/src/noisy_controller.cpp.o
+.PHONY : src/noisy_controller.cpp.o
+
+src/noisy_controller.i: src/noisy_controller.cpp.i
+.PHONY : src/noisy_controller.i
+
+# target to preprocess a source file
+src/noisy_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/noisy_controller.dir/build.make CMakeFiles/noisy_controller.dir/src/noisy_controller.cpp.i
+.PHONY : src/noisy_controller.cpp.i
+
+src/noisy_controller.s: src/noisy_controller.cpp.s
+.PHONY : src/noisy_controller.s
+
+# target to generate assembly for a file
+src/noisy_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/noisy_controller.dir/build.make CMakeFiles/noisy_controller.dir/src/noisy_controller.cpp.s
+.PHONY : src/noisy_controller.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -288,12 +325,16 @@ help:
 	@echo "... voyager_controller_uninstall"
 	@echo "... base_controller"
 	@echo "... cam_controller"
+	@echo "... noisy_controller"
 	@echo "... src/base_controller.o"
 	@echo "... src/base_controller.i"
 	@echo "... src/base_controller.s"
 	@echo "... src/cam_controller.o"
 	@echo "... src/cam_controller.i"
 	@echo "... src/cam_controller.s"
+	@echo "... src/noisy_controller.o"
+	@echo "... src/noisy_controller.i"
+	@echo "... src/noisy_controller.s"
 .PHONY : help
 
 

@@ -889,5 +889,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/voyager_controller_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/base_controller.dir/DependInfo.cmake"
+  "CMakeFiles/noisy_controller.dir/DependInfo.cmake"
   "CMakeFiles/cam_controller.dir/DependInfo.cmake"
   )
