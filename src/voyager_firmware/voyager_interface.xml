@@ -1,0 +1,10 @@
+<library path="voyager_firmware">
+    <class name="voyager_firmware/VoyagerInterface"
+      type="voyager_firmware::VoyagerInterface"
+      base_class_type="hardware_interface::SystemInterface"
+    >
+      <description>
+        Voyagert Hardware Interface
+      </description>
+    </class>
+  </library>
