@@ -31,10 +31,14 @@ float wheelRotations[4]    = {0.0, 0.0, 0.0};
 String inputString = ""; 
 const char delimiter = ','; 
 
-float commands[2] = {0.0, 0.0};
+float commands[4] = {0.0, 0.0, 0.0, 0.0};
 
 unsigned long command_timestamp;
 unsigned long current_timestamp;
+
+int mapFloat(float x, float in_min = 0.0, float in_max = 10.0, float out_min = 0.0 , float out_max = 4096.0) {
+    return round((x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min);
+}
 
 void setup() {
 
@@ -80,7 +84,7 @@ void loop() {
     Serial.print(" , ");
     Serial.println(commands[1]);
 
-    drive(commands[0], commands[1]);
+    drive(commands[0], commands[1], commands[2], commands[3]);
   }
   else
   {

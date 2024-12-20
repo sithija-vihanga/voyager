@@ -206,36 +206,10 @@ hardware_interface::return_type VoyagerInterface::write(const rclcpp::Time &,
     RCLCPP_INFO(rclcpp::get_logger("VoyagerInterface"), "Start writing");
     // Implement communication protocol with the Arduino
     std::stringstream message_stream;
-    char right_front_wheel_sign   = velocity_commands_.at(0) >= 0 ? 'p' : 'n';
-    char left_front_wheel_sign    = velocity_commands_.at(1) >= 0 ? 'p' : 'n';
-    char right_rear_wheel_sign    = velocity_commands_.at(0) >= 0 ? 'p' : 'n';
-    char left_rear_wheel_sign     = velocity_commands_.at(1) >= 0 ? 'p' : 'n';
-
-    std::string compensate_zeros_right_front  = "";
-    std::string compensate_zeros_left_front   = "";
-    std::string compensate_zeros_right_rear   = "";
-    std::string compensate_zeros_left_rear    = "";
-
-    auto compensate_zeros = [](double velocity) -> std::string {
-        return (velocity > 10.0) ? "0" : ""; 
-    };
-
-    compensate_zeros_right_front  = compensate_zeros(velocity_commands_.at(0));
-    compensate_zeros_left_front   = compensate_zeros(velocity_commands_.at(1));
-    compensate_zeros_right_rear   = compensate_zeros(velocity_commands_.at(2));
-    compensate_zeros_left_rear    = compensate_zeros(velocity_commands_.at(3));
-
-    // Right Front: a  
-    // Left  Front: b
-    // Right Rear:  c
-    // Left  Rear:  d
-
-    message_stream << std::fixed << std::setprecision(2) << 
-      "a" << right_front_wheel_sign << compensate_zeros_right_front << std::abs(velocity_commands_.at(0)) << 
-      ",b" <<  left_front_wheel_sign << compensate_zeros_left_front << std::abs(velocity_commands_.at(1)) <<
-      ",c" <<  right_rear_wheel_sign << compensate_zeros_right_rear << std::abs(velocity_commands_.at(2)) <<
-      ",d" <<  left_rear_wheel_sign << compensate_zeros_left_rear << std::abs(velocity_commands_.at(3)) << 
-      "\n";
+    
+    message_stream << std::fixed << std::setprecision(2) 
+      << velocity_commands_.at(0) << "," << velocity_commands_.at(1) << "," 
+      << velocity_commands_.at(2) << "," << velocity_commands_.at(3) << ",\n";
 
     try
     {

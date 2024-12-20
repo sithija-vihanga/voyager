@@ -1,15 +1,18 @@
-void drive(int LSpeed, int RSpeed)
+void drive(int LFrontSpeed, int LRearSpeed, int RFrontSpeed, int RRearSpeed)
 { 
-  int L_speed_out = map(abs(LSpeed), 0, 255, 0, 4096);
-  int R_speed_out = map(abs(RSpeed), 0, 255, 0, 4096);
+  int L_front_speed_out = mapFloat(L_front_speed_out);
+  int R_front_speed_out = mapFloat(R_front_speed_out);
+  int L_rear_speed_out  = mapFloat(L_rear_speed_out);
+  int R_rear_speed_out  = mapFloat(R_rear_speed_out);
+
 
   // Speed Controls
-  pwm.setPWM(4, 0, L_speed_out ); // Left front
-  pwm.setPWM(5, 0, R_speed_out ); // Right front
-  pwm.setPWM(6, 0, R_speed_out ); // Right rear
-  pwm.setPWM(7, 0, L_speed_out ); // Left rear
+  pwm.setPWM(4, 0, L_front_speed_out ); // Left front
+  pwm.setPWM(5, 0, R_front_speed_out ); // Right front
+  pwm.setPWM(6, 0, R_rear_speed_out ); // Right rear
+  pwm.setPWM(7, 0, L_rear_speed_out ); // Left rear
 
-  if (LSpeed > 0)
+  if (LFrontSpeed > 0)
   {
     pwm.setPWM(8,  0, 0 );        // Left front - forward
     pwm.setPWM(9,  0, 4000 );
@@ -26,7 +29,7 @@ void drive(int LSpeed, int RSpeed)
     
   }
 
-  if (RSpeed > 0)
+  if (RFrontSpeed > 0)
   {
 
     pwm.setPWM(10, 0, 4000 );       // Right rear - forward
@@ -106,3 +109,5 @@ void forward(int speed)
   pwm.setPWM(14, 0, 0 );
   pwm.setPWM(15, 0, 0 );
  }
+
+ 
