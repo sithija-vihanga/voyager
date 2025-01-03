@@ -209,7 +209,8 @@ hardware_interface::return_type VoyagerInterface::write(const rclcpp::Time &,
     
     message_stream << std::fixed << std::setprecision(2) 
       << velocity_commands_.at(0) << "," << velocity_commands_.at(1) << "," 
-      << velocity_commands_.at(2) << "," << velocity_commands_.at(3) << ",\n";
+      << velocity_commands_.at(3) << "," << velocity_commands_.at(2) << "," 
+      << position_commands_.at(0) << ",\n";
 
     try
     {

@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/voyager_msgs/srv/detail/get_transform__builder.hpp"
   "rosidl_generator_cpp/voyager_msgs/srv/detail/get_transform__struct.hpp"
   "rosidl_generator_cpp/voyager_msgs/srv/detail/get_transform__traits.hpp"
+  "rosidl_generator_cpp/voyager_msgs/srv/detail/get_transform__type_support.hpp"
   "rosidl_generator_cpp/voyager_msgs/srv/get_transform.hpp"
 )
 

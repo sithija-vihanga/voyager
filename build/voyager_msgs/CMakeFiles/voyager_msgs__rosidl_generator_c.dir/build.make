@@ -110,6 +110,7 @@ rosidl_generator_c/voyager_msgs/srv/get_transform.h: /opt/ros/humble/share/geome
 rosidl_generator_c/voyager_msgs/srv/get_transform.h: /opt/ros/humble/share/geometry_msgs/msg/TwistWithCovarianceStamped.idl
 rosidl_generator_c/voyager_msgs/srv/get_transform.h: /opt/ros/humble/share/geometry_msgs/msg/Vector3.idl
 rosidl_generator_c/voyager_msgs/srv/get_transform.h: /opt/ros/humble/share/geometry_msgs/msg/Vector3Stamped.idl
+rosidl_generator_c/voyager_msgs/srv/get_transform.h: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 rosidl_generator_c/voyager_msgs/srv/get_transform.h: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_c/voyager_msgs/srv/get_transform.h: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
 rosidl_generator_c/voyager_msgs/srv/get_transform.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -143,7 +144,7 @@ rosidl_generator_c/voyager_msgs/srv/get_transform.h: /opt/ros/humble/share/std_m
 rosidl_generator_c/voyager_msgs/srv/get_transform.h: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_generator_c/voyager_msgs/srv/get_transform.h: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sithija/voyager_ws/build/voyager_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/sithija/voyager_ws/build/voyager_msgs/rosidl_generator_c__arguments.json
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/sithija/voyager_ws/build/voyager_msgs/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/voyager_msgs/srv/detail/get_transform__functions.h: rosidl_generator_c/voyager_msgs/srv/get_transform.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/voyager_msgs/srv/detail/get_transform__functions.h

@@ -114,6 +114,7 @@ rosidl_generator_py/voyager_msgs/_voyager_msgs_s.ep.rosidl_typesupport_fastrtps_
 rosidl_generator_py/voyager_msgs/_voyager_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/TwistWithCovarianceStamped.idl
 rosidl_generator_py/voyager_msgs/_voyager_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Vector3.idl
 rosidl_generator_py/voyager_msgs/_voyager_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Vector3Stamped.idl
+rosidl_generator_py/voyager_msgs/_voyager_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 rosidl_generator_py/voyager_msgs/_voyager_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_py/voyager_msgs/_voyager_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
 rosidl_generator_py/voyager_msgs/_voyager_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Bool.idl

@@ -96,6 +96,7 @@ CMakeFiles/voyager_msgs: /opt/ros/humble/share/geometry_msgs/msg/TwistWithCovari
 CMakeFiles/voyager_msgs: /opt/ros/humble/share/geometry_msgs/msg/TwistWithCovarianceStamped.idl
 CMakeFiles/voyager_msgs: /opt/ros/humble/share/geometry_msgs/msg/Vector3.idl
 CMakeFiles/voyager_msgs: /opt/ros/humble/share/geometry_msgs/msg/Vector3Stamped.idl
+CMakeFiles/voyager_msgs: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 CMakeFiles/voyager_msgs: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 CMakeFiles/voyager_msgs: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
 

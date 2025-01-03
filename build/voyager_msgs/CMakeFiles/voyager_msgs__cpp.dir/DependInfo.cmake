@@ -15,6 +15,7 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/sithija/voyager_ws/build/voyager_msgs/rosidl_generator_cpp/voyager_msgs/srv/detail/get_transform__builder.hpp" "/home/sithija/voyager_ws/build/voyager_msgs/rosidl_generator_cpp/voyager_msgs/srv/get_transform.hpp"
   "/home/sithija/voyager_ws/build/voyager_msgs/rosidl_generator_cpp/voyager_msgs/srv/detail/get_transform__struct.hpp" "/home/sithija/voyager_ws/build/voyager_msgs/rosidl_generator_cpp/voyager_msgs/srv/get_transform.hpp"
   "/home/sithija/voyager_ws/build/voyager_msgs/rosidl_generator_cpp/voyager_msgs/srv/detail/get_transform__traits.hpp" "/home/sithija/voyager_ws/build/voyager_msgs/rosidl_generator_cpp/voyager_msgs/srv/get_transform.hpp"
+  "/home/sithija/voyager_ws/build/voyager_msgs/rosidl_generator_cpp/voyager_msgs/srv/detail/get_transform__type_support.hpp" "/home/sithija/voyager_ws/build/voyager_msgs/rosidl_generator_cpp/voyager_msgs/srv/get_transform.hpp"
   )
 
 
