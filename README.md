@@ -1,13 +1,27 @@
 # Voyager: Mobile robot platform for navigation research
 
-This repo is based on building a mobile robot based on ROS2-humble with camera based navigation using SLAM toolBox for localization without use of LIDARs. Also it is developing with the purposes of conducting navigation and manipulation based research in mobile robots mainly addressing the current limitations like crowd navigation.
+This individual project is focused on developing mobile robot platform to explore existing state of the art algorithms for navigation and mapping and to get hands-on experience on developing the robot from scratch. Robot enclosure was designed in SolidWorks and 3D printed. Metal gear motors with wheel encoders have been used for as sensor input and togather with SLAM  localization odometry is calculated. Robot consist of raspberry pi 5 and arduino portenta h7 dual core microcontroller.
 
-# Resources
+## Resources
+- LIDAR - Xiaomi s1 lidar
+- Processing unit - Raspberry pi 5
+- Microcontroller - Arduino portenta h7  lite
+- Camera - 480p webcam connected to raspberry pi
+- Motors - 150 rpm metal gear motors with hall effect wheel encoders
+- Battery - 4 x Li-ion 18650 batteries
+- Enclosure - custom design in solidworks
+- Teleop - Bluetooth joystick
 
-/Meshes directory contains 3D printable enclosure designed for the robot providing more space and reconfigurability for new sensors and actuators which will be added as future works of this project.
+## Used frameworks:
+- ROS2 - humble, jazzy
+- nav2 stack
+- SLAM
+- Joy teleop
+- ROS2-zenoh bridge
 
-# Robot features:
+## Robot features:
 
-- Robot has autonomous and manual controls using SLAM and navigation stack.
-- Odometry is setuped with sensor fusion of wheel encoders and IMU data to avoid slipping of the robot.
-- For navigation it uses 4 wheel differential drive.
+- Autonomous navigation with nav2 stack and SLAM toolbox.
+- Mappinng and localization
+- Joystick based mannual tele-operation
+- Communicating with server through ROS2 zenoh for data and map visualization
